@@ -7,7 +7,7 @@
     replace: 'Defaults  !requiretty'
     backup: yes
 
-- name: activar repositorios enable repos
+- name: enable repos http://www.opentlc.com/download/ansible_bootcamp/repo/internal.repo
   template:
     src: repos_template.j2
     dest: /etc/yum.repos.d/internal.repo
